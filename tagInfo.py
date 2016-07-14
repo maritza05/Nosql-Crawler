@@ -1,6 +1,3 @@
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
 # -*- coding: utf-8 -*-
 
 from bs4 import BeautifulSoup
@@ -26,7 +23,10 @@ while l < len(nameLi):
     while m < len(tagInfo):
         list.append(tagInfo[m].getText())
         m = m + 1
-        print(list)
+        str = list[0]
+        str.strip(" ")
+        print(str)
+
 
     # for tag in tagInfo:
         #info = tag.findAll('p')
