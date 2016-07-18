@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
-html = urlopen("https://github.com/search?q=mongodb&type=Users&utf8=%E2%9C%93")
+html = urlopen("https://github.com/search?utf8=%E2%9C%93&q=mongodb")
 infoObj = BeautifulSoup(html, "html.parser")
 
 info = infoObj.findAll('nav', {'class' : 'menu'})
